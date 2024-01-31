@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="10dp"
+            app:shapeAppearance="@style/Roundedsquare"
+            android:src="@drawable/tesla"
+            android:id="@+id/mypimage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/mypname"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="Nike airforce"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/mypprice"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="4500"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/myploc"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:text="Ruiru"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:id="@+id/delmypro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+          android:padding="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
